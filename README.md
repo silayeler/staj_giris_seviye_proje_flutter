@@ -31,13 +31,6 @@ Bu Flutter projesi, basit bir **kayıt formu** üzerinden kullanıcıdan ad, e-p
 
 ---
 
-## 📸 Ekran Görüntüleri
-
-| Kayıt Formu | Doğrulama Hataları | Bilgi Gösterimi |
-|-------------|--------------------|------------------|
-| ![Kayıt Formu](screenshots/screenshot-2025-07-23_17.33.49.926.png) | ![Hata](screenshots/screenshot-2025-07-23_17.34.18.709.png) | ![Bilgiler](screenshots/screenshot-2025-07-23_17.34.43.192.png) |
-
-> 📁 Not: Eğer görseller görünmüyorsa `screenshots/` klasörünü oluşturup bu dosyaları yüklemeyi unutmayın.
 
 ---
 
