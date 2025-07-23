@@ -1,16 +1,50 @@
-# staj_proje_1
+# 📱 Staj Giriş Seviyesi Flutter Projesi
 
-A new Flutter project.
+Bu Flutter projesi, basit bir **kayıt formu** üzerinden kullanıcıdan ad, e-posta ve telefon bilgilerini alır. Girilen bilgiler doğrulandıktan sonra ikinci bir sayfada gösterilir.
 
-## Getting Started
+## 🚀 Özellikler
 
-This project is a starting point for a Flutter application.
+- 📄 **Kayıt Formu** ile kullanıcıdan bilgi alma
+- ✅ **Form Doğrulama:** Geçerli e-posta kontrolü, telefonun en az 10 hane olması
+- 🌐 **Türkçe Dil Desteği** (`flutter_localizations`)
+- 🎨 Modern ve sade tasarım (Material Design)
+- 🔁 Sayfalar arası geçiş ve veri iletimi
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 💡 Kullanılan Önemli Flutter Bileşenleri
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Widget | Açıklama |
+|--------|----------|
+| `MaterialApp` | Uygulamanın kök widget'ıdır. Tema, yönlendirme ve dil desteği burada tanımlanır. |
+| `StatelessWidget` | Sabit durumlu ekranlar için kullanılır. Bu projede `MyApp` sınıfı bu yapıda. |
+| `Scaffold` | Sayfanın temel düzenini oluşturur (AppBar, Body, FAB). |
+| `AppBar` | Üstteki başlık çubuğu. Sayfa başlığı ve geri dönme ikonu burada. |
+| `TextFormField` | Kullanıcıdan metin (ad, e-posta, telefon) girişi alınır. |
+| `InputDecoration` | TextFormField içindeki ikon, hintText ve hata mesajı gibi görsellikleri kontrol eder. |
+| `Text` | Yazı gösterimi için kullanılır (örneğin: başlıklar, etiketler). |
+| `ElevatedButton` | Kaydol butonudur. Basıldığında formu doğrular ve diğer sayfaya yönlendirir. |
+| `Form` & `GlobalKey<FormState>` | Form alanlarını ve doğrulama işlemlerini yönetir. |
+| `Navigator.push` | Yeni sayfaya veriyle birlikte geçiş sağlar. |
+| `InputFormatter` | Telefon numarası girişinde sadece rakam girmeyi sağlar. |
+| `flutter_localizations` paketi | Uygulamayı Türkçe diline uyumlu hale getirir. |
+
+---
+
+## 📸 Ekran Görüntüleri
+
+| Kayıt Formu | Doğrulama Hataları | Bilgi Gösterimi |
+|-------------|--------------------|------------------|
+| ![Kayıt Formu](screenshots/screenshot-2025-07-23_17.33.49.926.png) | ![Hata](screenshots/screenshot-2025-07-23_17.34.18.709.png) | ![Bilgiler](screenshots/screenshot-2025-07-23_17.34.43.192.png) |
+
+> 📁 Not: Eğer görseller görünmüyorsa `screenshots/` klasörünü oluşturup bu dosyaları yüklemeyi unutmayın.
+
+---
+
+## 🧑‍💻 Kurulum Adımları
+
+```bash
+git clone https://github.com/silayeler/staj_giris_seviye_proje_flutter.git
+cd staj_giris_seviye_proje_flutter
+flutter pub get
+flutter run
